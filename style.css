@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font);
+    overflow: hidden;
+}
+a {
+    text-decoration:none; 
+    color: var(--gray);
+}
+a:hover {
+    color: black;
+}
+
+/* variaveis */
+:root{
+    --gray: #607D8B;
+    --buttons: #eeeeee;
+    --font: roboto, sans-serif;
+
+}
+
+/* header main footer */
+.header, .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 15px;
+    height: 5vh;
+    font-family: var(--font);
+    
+    .header-text{
+        text-decoration: none;
+        list-style: none; 
+        margin: 5px; 
+    }
+}
+.header-one, .header-two{
+    padding-top: 2px;
+        
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap:15px;
+
+    .logo{
+        max-width: 50vh;
+        display: flex;
+        flex-grow: 0;
+        
+    }
+}
+.main button{
+        background-color: var(--buttons);
+        border-radius: 5px;
+        
+        padding: 3px 10px;
+        border-style: none;
+    } 
+.main button:hover{
+    font-weight: bold;
+}
+
+.main input[type=text]{
+    border-radius: 15px;
+    border-width: 1.5px;
+    border-style: solid;
+    width: 55vh;
+    height: 3vh;
+    border-color: var(--buttons);
+}
+
+.footer{
+    background-color:silver;
+    .footer-text{
+        text-decoration: none;
+        list-style: none; 
+        margin: 5px; 
+    }
+
+}
+
